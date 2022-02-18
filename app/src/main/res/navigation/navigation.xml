@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titolFragment">
+
+    <fragment
+        android:id="@+id/titolFragment"
+        android:name="cat.montilivi.pixabayapiimatges.fragments.TitolFragment"
+        tools:layout="@layout/fragment_titol">
+        <action
+            android:id="@+id/action_titolFragment_to_llistaFotosFragment"
+            app:destination="@id/llistaFotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/llistaFotosFragment"
+        android:name="cat.montilivi.pixabayapiimatges.fragments.LlistaFotosFragment" >
+        <argument
+            android:name="queryURL"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_llistaFotosFragment_to_mostrarFotoFragment"
+            app:destination="@id/mostrarFotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preferenciasFragment"
+        android:name="cat.montilivi.pixabayapiimatges.fragments.PreferenciasFragment"
+        android:label="PreferenciasFragment" />
+    <fragment
+        android:id="@+id/mostrarFotoFragment"
+        android:name="cat.montilivi.pixabayapiimatges.fragments.MostrarFotoFragment"
+        android:label="fragment_mostrar_foto"
+        tools:layout="@layout/fragment_mostrar_foto" >
+        <argument android:name="urlFoto"
+            app:argType="string" />
+    </fragment>
+</navigation>

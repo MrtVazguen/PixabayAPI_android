@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        android:key="swTemariAliatori"
+        android:title="Temari aliatori"
+        app:defaultValue="true"
+        app:icon="@android:drawable/ic_input_get"
+        app:summaryOff="activar buscador"
+        app:summaryOn="cerca a l'atzar"
+        />
+
+    <SeekBarPreference
+        android:key="sbNFotosCercar"
+        android:min ="10"
+        android:max="1000"
+        app:defaultValue="10"
+        android:title="Numero de fotos per cercar"
+        android:summary="Tria el valor minim de cerca"
+        app:showSeekBarValue="true"/>
+
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pixabay fotos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="budueda_paraules_array">
+        <item>Algorithm</item>
+        <item>computing</item>
+        <item>Programming</item>
+        <item>science</item>
+        <item>Engineer</item>
+        <item>Moon</item>
+        <item>universe</item>
+        <item>Ararat</item>
+        <item>Earth</item>
+        <item>ocean</item>
+        <item>Spain</item>
+        <item>galaxies</item>
+    </string-array>
+</resources>

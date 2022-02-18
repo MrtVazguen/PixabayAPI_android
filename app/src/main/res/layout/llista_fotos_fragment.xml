@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="cat.montilivi.pixabayapiimatges.viewmodels.LlistaFotosViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.LlistaFotosFragment">
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Status"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@{viewModel.resposta}"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Noticias"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:text="@{viewModel.resposta}"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/titol2"
+            android:onClick="@{()->viewModel.getRespostaListNoticias()}"
+            android:text="Consulta Servei"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/abril" />
+-->
+
+<!--
+        <com.github.chrisbanes.photoview.PhotoView
+            android:src="@android:drawable/ic_menu_compass"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:id="@+id/ivFoto"/>
+-->
+        <TextView
+            android:id="@+id/tvMesatge"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Cargando..."
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_marginBottom="20sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerviewFotos"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+</layout>

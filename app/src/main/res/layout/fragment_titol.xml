@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.TitolFragment">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Busca en  "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:gravity="center"
+            android:textColor="@color/cardview_light_background"
+            android:fontFamily="@font/lobsterregular" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/logoprincipal"/>
+
+        <EditText
+            android:id="@+id/tvCercaUrl"
+            android:hint="Cerca"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnPixabay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Obrir"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="30sp"
+            android:fontFamily="@font/abril" />
+
+    </LinearLayout>
+</layout>
